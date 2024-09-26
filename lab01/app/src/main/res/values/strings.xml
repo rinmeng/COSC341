@@ -1,13 +1,38 @@
 <resources>
-    <string name="app_name">lab0</string>
-    <string name="ubcLogo">UBC Logo</string>
-    <string name="yourName">Your Name</string>
-    <string name="yourEmail">Your Email Address</string>
-    <string name="gender">Gender</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="anotherGender">Another Gender</string>
-    <string name="emailSubscription">Email Subscription</string>
-    <string name="submit">Submit</string>
-    <string name="textOutput"> </string>
+    <string name="app_name">lab01</string>
+    <string name="bPrev">Previous</string>
+    <string name="bNext">Next</string>
+    <string name="bRandom">Random</string>
+    <string name="imgViewDesc">Image with views</string>
+    <string name="imgInfo">Image: </string>
+    <string name="textQ1">Question 1 Task</string>
+    <string name="textGotoQ2">Goto Question 2 Task</string>
+    <string name="textQ2">Question 2 Task</string>
+    <string name="textGotoQ1">Goto Question 1 Task</string>
+    <string name="firstCourse">First Course</string>
+    <string name="secondCourse">Second Course</string>
+    <string name="thirdCourse">Third Course</string>
+    <string name="fourthCourse">Fourth Course</string>
+    <string name="selectionOutput">You have selected: </string>
+    <string name="showSummary">Show Summary</string>
+
+    <string-array name="spinner1">
+        <item>COSC101</item>
+        <item>COSC102</item>
+        <item>PHY101</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>COSC201</item>
+        <item>PHY201</item>
+        <item>PHY202</item>
+    </string-array>
+    <string-array name="spinner3">
+        <item>COSC304</item>
+        <item>PHY304</item>
+    </string-array>
+    <string-array name="spinner4">
+        <item>COSC405</item>
+        <item>PHY401</item>
+    </string-array>
+
 </resources>

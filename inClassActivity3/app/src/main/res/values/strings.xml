@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">inClassActivity3</string>
+    <string name="universityName">University Name</string>
+    <string name="sendButton">Send</string>
+</resources>

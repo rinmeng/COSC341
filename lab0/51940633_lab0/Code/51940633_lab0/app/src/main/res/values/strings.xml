@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab0</string>
+    <string name="ubcLogo">UBC Logo</string>
+    <string name="yourName">Your Name</string>
+    <string name="yourEmail">Your Email Address</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="anotherGender">Another Gender</string>
+    <string name="emailSubscription">Email Subscription</string>
+    <string name="submit">Submit</string>
+    <string name="textOutput"> </string>
+</resources>

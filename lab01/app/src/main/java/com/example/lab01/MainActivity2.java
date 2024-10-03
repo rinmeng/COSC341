@@ -44,13 +44,11 @@ public class MainActivity2 extends AppCompatActivity {
                 selectedValues.add(s3.getSelectedItem().toString());
                 selectedValues.add(s4.getSelectedItem().toString());
 
-
                 selectedText = "You have selected: \n" + selectedValues.get(0);
 
                 selectionOutput.setText(selectedText);
             }
         });
-
 
         bToQ1.setOnClickListener(new View.OnClickListener() {
             @Override

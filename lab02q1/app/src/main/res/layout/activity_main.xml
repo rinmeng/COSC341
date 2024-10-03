@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="411dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="18dp"
+        android:ems="10"
+        android:hint="@string/usernameField"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <EditText
+        android:id="@+id/fEmail"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/emailField"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/fBirthday"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/dateofbirth"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/dobField"
+        android:inputType="none"
+        android:textSize="20sp"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
+    <EditText
+        android:id="@+id/fPassword"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/passwordField"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fBirthday" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fEmail">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@string/genderMale"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genderFemale"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/genderOther"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/registerButton"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

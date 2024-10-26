@@ -13,14 +13,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class MainActivity2 extends AppCompatActivity {
     Button bToQ1, bSummary;
     Spinner s1, s2, s3, s4;
     TextView selectionOutput;
     String selectedText;
-    ArrayList<String> selectedValues;
+    ArrayList<String> selectedValues = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +37,52 @@ public class MainActivity2 extends AppCompatActivity {
 
         bSummary.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                selectedValues.add(s1.getSelectedItem().toString());
-                selectedValues.add(s2.getSelectedItem().toString());
-                selectedValues.add(s3.getSelectedItem().toString());
-                selectedValues.add(s4.getSelectedItem().toString());
+            public void onClick(View view)
+                selectedValues.clear();
 
-                selectedText = "You have selected: \n" + selectedValues.get(0);
+                // Initialize counters
+                int coscCount = 0;
+                int phyCount = 0;
+                int level100Count = 0;
+                int level200Count = 0;
+                int level300Count = 0;
+                int level400Count = 0;
+
+                String s1Value = s1.getSelectedItem().toString();
+                String s2Value = s2.getSelectedItem().toString();
+                String s3Value = s3.getSelectedItem().toString();
+                String s4Value = s4.getSelectedItem().toString();
+
+                selectedValues.add(s1Value);
+                selectedValues.add(s2Value);
+                selectedValues.add(s3Value);
+                selectedValues.add(s4Value);
+
+                for (String value : selectedValues) {
+                    if (value.startsWith("COSC")) {
+                        coscCount++;
+                    } else if (value.startsWith("PHY")) {
+                        phyCount++;
+                    }
+
+                    if (value.matches(".*\\b100\\b.*")) {
+                        level100Count++;
+                    } else if (value.matches(".*\\b200\\b.*")) {
+                        level200Count++;
+                    } else if (value.matches(".*\\b300\\b.*")) {
+                        level300Count++;
+                    } else if (value.matches(".*\\b400\\b.*")) {
+                        level400Count++;
+                    }
+                }
+
+                selectedText = "You have selected: \n" +
+                        " - " + coscCount + " COSC Courses\n" +
+                        " - " + phyCount + " PHY Courses\n" +
+                        " - " + level100Count + " from 100 level\n" +
+                        " - " + level200Count + " from 200 level\n" +
+                        " - " + level300Count + " from 300 level\n" +
+                        " - " + level400Count + " from 400 level";
 
                 selectionOutput.setText(selectedText);
             }

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="usernameField">Name</string>
+    <string name="emailField">Email</string>
+    <string name="genderText">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="genderOther">Other</string>
+    <string name="dobField">Birthday</string>
+    <string name="passwordField">Password</string>
+    <string name="registerButton">Register Now</string>
+    <string name="regSuccess">Registration Successful</string>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">lab03q1</string>
+    <string name="welcomeMessage">Welcome to my quiz!</string>
+    <string name="numQ">Number of Questions:</string>
+    <string name="catQ">Select Category:</string>
+    <string name="btnLoadQuiz">Load Quiz</string>
+
+
+    <string-array name="questionOptions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="categoryOptions">
+        <item>Car Logo</item>
+        <item>Car Division</item>
+        <item>Car Model</item>
+    </string-array>
+</resources>

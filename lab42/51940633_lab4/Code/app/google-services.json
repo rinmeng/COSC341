@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "247665315535",
+    "firebase_url": "https://lab4-a9891-default-rtdb.firebaseio.com",
+    "project_id": "lab4-a9891",
+    "storage_bucket": "lab4-a9891.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247665315535:android:a689d75b0bf3151a0631ba",
+        "android_client_info": {
+          "package_name": "com.example.lab4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACudKlNHF5789G4syRujQEtGBTnHd94sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

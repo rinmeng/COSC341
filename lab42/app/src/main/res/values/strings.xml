@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="toolbar">File Operations</string>
+    <string name="readbtn">Read Data</string>
+    <string name="writebtn">Write Data</string>
+    <string name="database">Write on Database?</string>
+    <string name="fileop">File Operations</string>
+
+    <string-array name="stringArr">
+        <item>
+            COSC
+        </item>
+        <item>
+            DATA
+        </item>
+        <item>
+            MATH
+        </item>
+    </string-array>
+
+</resources>

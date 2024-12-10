@@ -103,7 +103,7 @@ public class WriteActivity extends AppCompatActivity {
                             .addOnSuccessListener(aVoid -> {
                                 Toast.makeText(WriteActivity.this, "Data saved to Firebase successfully!", Toast.LENGTH_SHORT).show();
                                 // Navigate back to MainActivity after successful write
-                                startActivity(new Intent(WriteActivity.this, MainActivity.class));
+                                finish();
                             })
                             .addOnFailureListener(e -> {
                                 Toast.makeText(WriteActivity.this, "Error saving data to Firebase: " + e.getMessage(), Toast.LENGTH_SHORT).show();
